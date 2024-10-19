@@ -1,5 +1,5 @@
 #import "AppDelegate.h"
-
+#import "RNSplashScreen.h"
 #import <React/RCTBundleURLProvider.h>
 
 @implementation AppDelegate
@@ -7,11 +7,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   self.moduleName = @"rnTopics";
+  
   // You can add your custom initial props in the dictionary below.
-  // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
 
-  return [super application:application didFinishLaunchingWithOptions:launchOptions];
+  BOOL didFinishLaunching = [super application:application didFinishLaunchingWithOptions:launchOptions];
+  
+  // Show the splash screen after React Native root view is initialized
+  [RNSplashScreen show];
+
+  return didFinishLaunching;
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge

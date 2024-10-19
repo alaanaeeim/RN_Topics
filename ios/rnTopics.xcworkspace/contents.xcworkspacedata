@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:launch_screen.jpeg">
+   </FileRef>
+   <FileRef
       location = "group:rnTopics.xcodeproj">
    </FileRef>
    <FileRef
