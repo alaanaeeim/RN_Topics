@@ -19,13 +19,6 @@ ios/build/
 *.xcworkspace/xcuserdata/
 *.xcuserdata/
 
-# Generated files
-*.log
-*.lock
-*.tmp
-*.temp
-*.swp
-*.swo
 
 # macOS
 .DS_Store
@@ -37,7 +30,6 @@ ehthumbs.db
 # Android/IntelliJ
 .idea/
 .gradle/
-local.properties
 *.iml
 build/
 
@@ -46,7 +38,4 @@ android/app/google-services.json
 ios/Runner/GoogleService-Info.plist
 
 # React Native Packager
-/packager-info.json
-/react-native.config.js
-/metro.config.js
 /ios/Pods/
